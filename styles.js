@@ -59,6 +59,7 @@ const styles = {
     width: 6,
     marginLeft: 5,
     marginRight: 5,
+    marginBottom:100,
     borderRadius: 3,
   },
   navigationItemSquares: {
