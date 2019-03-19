@@ -222,11 +222,11 @@ class SwipeableParallaxCarousel extends Component {
     return data.map((item, index) => {
       // Current item selection
       let currentItem = null;
-      if (index === this.state.nextItem) currentItem = { backgroundColor: navigationColor, transform: [{ scale: 1.25 }] };
+      if (index === this.state.nextItem) currentItem = { backgroundColor: navigationColor, transform: [{ scale: 1 }] };
       return (
         <Animated.View
           key={index}
-          style={[styles.navigationItem, typeItem, currentItem]}
+          style={[styles.navigationItem, typeItem, currentItem, {marginBottom: 40}]}
         />
       );
     });
